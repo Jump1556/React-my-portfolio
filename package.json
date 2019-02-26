@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "react-undraw-illustrations": "^2.0.3"
   },
   "scripts": {
     "build:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
     "watch:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css -w",
-    "start": "npm run watch:css & webpack-dev-server --inline --mode development --open",
-    "build": "npm run build:css && webpack --mode production"
+    "start": "npm run watch:css & react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,6 +29,7 @@
   "devDependencies": {
     "autoprefixer": "^9.4.9",
     "postcss-cli": "^6.1.2",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^0.7.4",
+    "webpack-cli": "^3.2.3"
   }
 }

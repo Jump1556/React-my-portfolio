@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
-      <p>Created by Anastasi with React at Coffee'n'Code meetup</p>
+    <div className="footer-wrapper">
+      <div className="footer-content">
+        Created by Anastasi with React at Coffee'n'Code meetup
+      </div>
     </div>
   )
 }
