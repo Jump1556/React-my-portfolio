@@ -1,0 +1,26 @@
+#app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.name {
+  font-size: 3em;
+  margin: .25em;
+}
+.card {
+  font-family:  Helvetica, Arial, sans-serif;
+  background-color: #05230a;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid #005365;
+  color: #a82d2d;
+  display: flex;
+  flex-direction: column;
+  justify-conent: center;
+  align-items: center;
+}
+.card img {
+  height: 500px;
+  padding: 4px 20px 10px 20px;
+}
