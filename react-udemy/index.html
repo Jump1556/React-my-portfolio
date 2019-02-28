@@ -31,8 +31,22 @@
         );
       }
     }
+    
+    class RandomBox extends React.Component {
+      render() {
+        const fontSize = Math.floor(Math.random() * 80) + 20;
+        const backgroundColor = ["red", "green", "blue"][Math.floor(Math.random()*3)];
+        return (
+          <div className="box"
+               style={{fontSize: `${fontSize}px`, backgroundColor}}>
+            RandomBox
+          </div>
+        )
+      }
+    }
 
-    ReactDOM.render(<Animal />, document.getElementById("app"));
+    ReactDOM.render(<div> <Animal /> <RandomBox /> </div>, document.getElementById("app"));
+    
   </script>
 </body>
 </html>
